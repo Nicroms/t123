@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <script src="https://www.google.com/recaptcha/api.js?render=6Le7ydgsAAAAAPpfSYL9QQaEQeVPDQTq8WcZcY0T"></script>
-  <script>
-    function onExecute(action) {
-      grecaptcha.ready(function() {
-        grecaptcha.execute('6Le7ydgsAAAAAPpfSYL9QQaEQeVPDQTq8WcZcY0T', {action: action}).then(function(token) {
-          if (window.RecaptchaFlutterChannel) {
-            window.RecaptchaFlutterChannel.postMessage(token);
-          }
-        });
-      });
-    }
-  </script>
 </head>
 <body></body>
 </html>

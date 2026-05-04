@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://www.google.com/recaptcha/api.js?render=TA_SITE_KEY_ICI"></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6Le7ydgsAAAAAPpfSYL9QQaEQeVPDQTq8WcZcY0T"></script>
   <script>
     function onExecute(action) {
       grecaptcha.ready(function() {
-        grecaptcha.execute('TA_SITE_KEY_ICI', {action: action}).then(function(token) {
+        grecaptcha.execute('6Le7ydgsAAAAAPpfSYL9QQaEQeVPDQTq8WcZcY0T', {action: action}).then(function(token) {
           if (window.RecaptchaFlutterChannel) {
             window.RecaptchaFlutterChannel.postMessage(token);
           }
